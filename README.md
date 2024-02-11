@@ -2,5 +2,5 @@
 
 Class 8 Assignment. 
 
-![Alt text](screenshot.PNG)
+![Alt text](screenshot.png)
 
