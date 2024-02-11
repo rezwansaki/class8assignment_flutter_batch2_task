@@ -16,11 +16,10 @@ class HomeScreen extends StatelessWidget {
           title: const Text('UI Design'),
         ),
         body: SingleChildScrollView(
+          padding: const EdgeInsets.all(25.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Padding(
-                padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 20.0),
-              ),
               const TextField(
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
@@ -40,15 +39,15 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: 8),
               const TextField(
                 decoration: InputDecoration(
-                  errorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(width: 3, color: Colors.black),
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black),
                   ),
                 ),
               ),
               const SizedBox(height: 10),
               const TextField(
                 decoration: InputDecoration(
-                  errorBorder: OutlineInputBorder(
+                  enabledBorder: UnderlineInputBorder(
                     borderSide: BorderSide(width: 5, color: Colors.green),
                   ),
                 ),
