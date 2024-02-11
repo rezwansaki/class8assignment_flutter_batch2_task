@@ -1,3 +1,4 @@
+import 'package:class8assignment_flutter_batch2_task/screens/custom_text_field_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -20,45 +21,50 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const TextField(
+              const CustomTextFieldWidget(
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(width: 3, color: Colors.greenAccent),
                   ),
                 ),
+                obscureText: false,
               ),
               const SizedBox(height: 8),
-              TextField(
+              CustomTextFieldWidget(
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(42.0),
                     borderSide: const BorderSide(width: 3, color: Colors.green),
                   ),
                 ),
+                obscureText: false,
               ),
               const SizedBox(height: 8),
-              const TextField(
+              const CustomTextFieldWidget(
                 decoration: InputDecoration(
                   enabledBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.black),
                   ),
                 ),
+                obscureText: false,
               ),
               const SizedBox(height: 10),
-              const TextField(
+              const CustomTextFieldWidget(
                 decoration: InputDecoration(
                   enabledBorder: UnderlineInputBorder(
                     borderSide: BorderSide(width: 5, color: Colors.green),
                   ),
                 ),
+                obscureText: false,
               ),
               const SizedBox(height: 20),
-              const TextField(
+              const CustomTextFieldWidget(
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(width: 5, color: Colors.greenAccent),
                   ),
                 ),
+                obscureText: false,
               ),
             ],
           ),
